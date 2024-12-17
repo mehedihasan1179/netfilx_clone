@@ -1,0 +1,43 @@
+.title-cards {
+    margin: 2rem 0;
+    padding-left: 6%;
+}
+
+.title-cards h2 {
+    margin: 0 0 1rem 0;
+}
+
+.title-cards .card-list {
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+.title-cards .card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.title-cards .cards img {
+    width: 15rem;
+    border-radius: .25rem;
+
+}
+
+.title-cards .cards img:hover {
+    transform: scale(1.1);
+    width: 15.2rem;
+    transition: all 0.5s ease;
+}
+
+.title-cards .cards {
+    position: relative;
+    font-size: 1rem;
+}
+
+.title-cards .cards p{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    color: #fff;
+}
+

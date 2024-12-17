@@ -1,0 +1,50 @@
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player .back-icon {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 3.5rem;
+}
+
+.player iframe {
+    margin: 2rem;
+    width: 90%;
+    height: 75vh;
+}
+
+.player .display-info {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .player iframe {
+        position: absolute;
+        top: 5%;
+        
+    }
+}
+
+@media (max-width: 25rem) {
+    .player .display-info {
+        
+        position: absolute;
+        top: 10%;
+    }
+
+    .player iframe {
+        position: absolute;
+        top: 10%;
+        
+    }
+    
+}
+

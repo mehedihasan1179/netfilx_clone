@@ -1,0 +1,96 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 6%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-left img {
+    width: 5rem;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar-left ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.navbar-left ul li {
+    width: max-content;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-right .icons {
+    width: 1.25rem;
+}
+
+.navbar-right .profile {
+    display: flex;
+    align-items: center;
+    gap: .875rem;
+    position: relative;
+}
+
+.navbar-right .profile .profile-img {
+    border-radius: 0.25rem;
+}
+
+.sign-out {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: max-content;
+    padding: 1.25rem .5rem;
+    background-color: #1c1c1c;
+    border-radius: 0.25rem;
+    display: none;
+    text-decoration: underline;
+}
+
+.navbar-right .profile:hover .sign-out {
+    display: block;
+}
+
+.dark-nav {
+    background: #1f1f1f;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-left ul{
+        display: none;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar-left ul{
+        display: none;
+
+    }
+    .navbar {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1.25rem 4%;
+    }
+}
+
+
